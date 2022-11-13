@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHelper", "FileHelper\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{073E5C89-84E4-4EAC-BEA3-D5872A93DAA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHelperTests", "FileHelperTests\FileHelperTests.csproj", "{F53EC7E2-5C7A-49DC-B898-BCBD24256B37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHelperTests", "FileHelperTests\FileHelperTests.csproj", "{1C966AF0-E06D-4151-AB4F-903962026A89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{073E5C89-84E4-4EAC-BEA3-D5872A93DAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073E5C89-84E4-4EAC-BEA3-D5872A93DAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073E5C89-84E4-4EAC-BEA3-D5872A93DAA5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F53EC7E2-5C7A-49DC-B898-BCBD24256B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F53EC7E2-5C7A-49DC-B898-BCBD24256B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F53EC7E2-5C7A-49DC-B898-BCBD24256B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F53EC7E2-5C7A-49DC-B898-BCBD24256B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C966AF0-E06D-4151-AB4F-903962026A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C966AF0-E06D-4151-AB4F-903962026A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C966AF0-E06D-4151-AB4F-903962026A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C966AF0-E06D-4151-AB4F-903962026A89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
