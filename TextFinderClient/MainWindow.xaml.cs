@@ -26,5 +26,10 @@ namespace TextFinderClient
         {
             MessageBox.Show("To be implemented...");
         }
+
+        private void TextToFind_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

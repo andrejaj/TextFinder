@@ -7,10 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,26,0,0" VerticalAlignment="Top">
+            <TextBox Margin="0,18,20,0" Width="300" Name="FileLocation"></TextBox>
+            <Button Margin="0,18,0,0" Width="100" Name="SelectFile">Open File</Button>
+        </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,56,0,0" VerticalAlignment="Top">
-            
-            <TextBox Margin="0,18,20,0" Width="300">Enter some text</TextBox>
-            <Button Margin="0,18,0,0" Width="100" x:Name="Find" Click="Find_Click">Find</Button>
+            <TextBox Margin="0,18,20,0" Width="300" GotFocus="TextToFind_GotFocus" Name="TextToFind">Enter some text</TextBox>
+            <Button Margin="0,18,0,0" Width="100" Name="Find" Click="Find_Click">Find</Button>
         </StackPanel>
         <ListView x:Name="listView1" HorizontalAlignment="Left" Height="203" Margin="10,106,0,0" VerticalAlignment="Top">
             <ListView.View>
