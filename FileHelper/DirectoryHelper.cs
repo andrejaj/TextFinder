@@ -1,4 +1,5 @@
 ﻿using Infrastructure.Model;
+using System.Runtime.InteropServices;
 
 namespace FileHelper
 {
@@ -7,7 +8,12 @@ namespace FileHelper
         private readonly IDirectoryWrapper _directoryWrapper;
         private readonly IFileWrapper _fileWrapper;
 
-        public DirectoryHelper(IDirectoryWrapper directoryWrapper, IFileWrapper fileWrapper)
+        public static DirectoryHelper DirectoryHelperCreator()
+        {
+            return new DirectoryHelper(new DirectoryWrapper(), new FileWrapper());
+        }
+
+        internal DirectoryHelper(IDirectoryWrapper directoryWrapper, IFileWrapper fileWrapper)
         {
 
             _directoryWrapper = directoryWrapper ?? throw new ArgumentNullException(nameof(directoryWrapper));
