@@ -7,19 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,26,0,0" VerticalAlignment="Top">
-            <TextBox Margin="0,18,20,0" Width="300" Name="FileLocation"></TextBox>
-            <Button Margin="0,18,0,0" Width="100" Name="SelectFile">Open File</Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,26,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <TextBox Margin="0,18,20,0" Width="300" x:Name="FileLocation"></TextBox>
+            <Button Margin="0,18,0,0" Width="100" x:Name="SelectFile">Open File</Button>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,56,0,0" VerticalAlignment="Top">
-            <TextBox Margin="0,18,20,0" Width="300" GotFocus="TextToFind_GotFocus" Name="TextToFind">Enter some text</TextBox>
-            <Button Margin="0,18,0,0" Width="100" Name="Find" Click="Find_Click">Find</Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,56,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <TextBox Margin="0,18,20,0" Width="300" GotFocus="TextToFind_GotFocus" x:Name="TextToFind">Enter some text</TextBox>
+            <Button Margin="0,18,0,0" Width="100" x:Name="Find" Click="Find_Click">Find</Button>
         </StackPanel>
-        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="203" Margin="10,106,0,0" VerticalAlignment="Top">
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="203" Margin="10,106,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Path" x:Name="path" Width="370" DisplayMemberBinding="{Binding FilePath}" />
-                    <GridViewColumn Header="Count" x:Name="count" Width="50" DisplayMemberBinding="{Binding WordCount}"/>
+                    <GridViewColumn Header="Path" x:Name="listPath" Width="360" DisplayMemberBinding="{Binding FilePath}" />
+                    <GridViewColumn Header="Count" x:Name="listCount" Width="50" DisplayMemberBinding="{Binding WordCount}"/>
                 </GridView>
             </ListView.View>
         </ListView>

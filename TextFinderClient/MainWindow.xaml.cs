@@ -20,16 +20,17 @@ namespace TextFinderClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        //public MainWindow() => InitializeComponent();
+        public MainWindow() => InitializeComponent();
 
         private void Find_Click(object sender, RoutedEventArgs e)
         {
+            var t = this.TextToFind.Text;
             MessageBox.Show("To be implemented...");
         }
 
         private void TextToFind_GotFocus(object sender, RoutedEventArgs e)
         {
-
+            this.TextToFind.Text = string.Empty;
         }
     }
 }
