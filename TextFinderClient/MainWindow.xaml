@@ -1,0 +1,24 @@
+﻿<Window x:Class="TextFinderClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextFinderClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="40" Margin="12,56,0,0" VerticalAlignment="Top">
+            
+            <TextBox Margin="0,18,20,0" Width="300">Enter some text</TextBox>
+            <Button Margin="0,18,0,0" Width="100" x:Name="Find" Click="Find_Click">Find</Button>
+        </StackPanel>
+        <ListView x:Name="listView1" HorizontalAlignment="Left" Height="203" Margin="10,106,0,0" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Path" x:Name="path" Width="370" DisplayMemberBinding="{Binding FilePath}" />
+                    <GridViewColumn Header="Count" x:Name="count" Width="50" DisplayMemberBinding="{Binding WordCount}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

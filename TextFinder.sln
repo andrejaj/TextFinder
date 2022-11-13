@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFinderAPI", "TextFinder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFinderAPITests", "TextFinderControllerTests\TextFinderAPITests.csproj", "{8CCBEDD1-222E-4C54-A0DB-6C5D3A399394}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFinderClient", "TextFinderClient\TextFinderClient.csproj", "{6D60D075-4EA9-40B1-90E8-06C048992C49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8CCBEDD1-222E-4C54-A0DB-6C5D3A399394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CCBEDD1-222E-4C54-A0DB-6C5D3A399394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CCBEDD1-222E-4C54-A0DB-6C5D3A399394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
