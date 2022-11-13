@@ -26,6 +26,11 @@ namespace TextFinderAPI.Controllers
         {          
             _logger.LogInformation($"Fetch Get with request.Path: {request.Path} and request.Word {request.Word}");
 
+            if (string.IsNullOrEmpty(request.Word) || string.IsNullOrEmpty(request.Path))
+            {
+                return Enumerable.Empty<WordCount>();
+            }
+
             ///make GetFilesContainingWord async!
             var result = _directoryHelper.GetFilesContainingWord(request.Path, request.Word);
             return result;
