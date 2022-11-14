@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace Infrastructure.Model
+﻿namespace Infrastructure.Model
 {
     public class WordCount
     {
