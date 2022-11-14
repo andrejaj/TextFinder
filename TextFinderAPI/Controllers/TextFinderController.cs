@@ -24,7 +24,7 @@ namespace TextFinderAPI.Controllers
         [HttpGet]
         public IEnumerable<WordCount> Get([FromQuery] GetRequest request)
         {          
-            _logger.LogInformation($"Fetch Get with request.Path: {request.Path} and request.Word {request.Word}");
+            _logger.LogInformation($"Call Id: {new Random().Next(10)} - Fetch Get with Folderpath: {request.Path} and Text: {request.Word}");
 
             if (string.IsNullOrEmpty(request.Word) || string.IsNullOrEmpty(request.Path))
             {
