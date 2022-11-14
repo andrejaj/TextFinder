@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHelper", "FileHelper\FileHelper.csproj", "{1A350749-F357-44D3-A8AD-BCF8E7576D03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHelper", "FileHelper\FileHelper.csproj", "{1A350749-F357-44D3-A8AD-BCF8E7576D03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{073E5C89-84E4-4EAC-BEA3-D5872A93DAA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{073E5C89-84E4-4EAC-BEA3-D5872A93DAA5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHelperTests", "FileHelperTests\FileHelperTests.csproj", "{1C966AF0-E06D-4151-AB4F-903962026A89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFinderAPI", "TextFinderAPI\TextFinderAPI.csproj", "{E5F083C7-A7A5-495C-B747-11ADC03646E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFinderAPI", "TextFinderAPI\TextFinderAPI.csproj", "{E5F083C7-A7A5-495C-B747-11ADC03646E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFinderAPITests", "TextFinderControllerTests\TextFinderAPITests.csproj", "{8CCBEDD1-222E-4C54-A0DB-6C5D3A399394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFinderAPITests", "TextFinderControllerTests\TextFinderAPITests.csproj", "{8CCBEDD1-222E-4C54-A0DB-6C5D3A399394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFinderClient", "TextFinderClient\TextFinderClient.csproj", "{6D60D075-4EA9-40B1-90E8-06C048992C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFinderClient", "TextFinderClient\TextFinderClient.csproj", "{6D60D075-4EA9-40B1-90E8-06C048992C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureTests", "InfrastructureTests\InfrastructureTests.csproj", "{4B97BF8D-06D9-443F-B10A-5689F3034C5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D60D075-4EA9-40B1-90E8-06C048992C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B97BF8D-06D9-443F-B10A-5689F3034C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B97BF8D-06D9-443F-B10A-5689F3034C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B97BF8D-06D9-443F-B10A-5689F3034C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B97BF8D-06D9-443F-B10A-5689F3034C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
