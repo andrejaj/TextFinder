@@ -4,10 +4,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-//to be done..
-///builder.Services.AddSingleton<FileHelper.IDirectoryHelper, FileHelper.DirectoryHelper>()
-//builder.Services.AddSingleton<FileHelper.IFileWrapper, FileHelper.FileWrapper>();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
